@@ -66,6 +66,9 @@ extern String stateBTMeasures(bool);
 
 #define MinimumRSSI -100 //default minimum rssi value, all the devices below -100 will not be reported
 
+#ifndef BTEnabled
+#  define BTEnabled true // Enable or disable the BT gateway
+#endif
 #ifndef Scan_duration
 #  define Scan_duration 10000 //define the duration for a scan; in milliseconds
 #endif
